@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Brain, Loader2, Users, Clock, Mic, Coffee, Zap, Mountain, Trees, Waves, ChevronLeft, ChevronRight, Eye } from "lucide-react"
 import { z } from "zod"
+import VantaBirds from "@/components/VantaBirds"
 
 // --- CORRECTED: The validation schema now matches your actual data ranges ---
 const PersonalitySchema = z.object({
@@ -253,17 +254,8 @@ export default function AssessmentPage() {
 
   return (
     <div className="page-container">
-      {/* Enhanced Dark Theme Bubble Background */}
-      <div className="bubble-background">
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-      </div>
+      {/* Birds Background - Same as main page */}
+      <VantaBirds />
 
       {/* Enhanced Header with Bigger Brain Logo */}
       <div className="absolute top-8 left-8 z-20 fade-in">

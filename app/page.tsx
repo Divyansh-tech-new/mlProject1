@@ -82,9 +82,55 @@ export default function HomePage() {
 
           {/* Right Content */}
           <div className="slide-right">
-            {/* The entire content of the right card remains exactly the same as before */}
             <div className="figma-card w-full h-96 lg:h-[600px] overflow-hidden">
-                {/* ... all your content from the original file ... */}
+              {/* Neural Intelligence Card */}
+              <div className="relative h-full space-image">
+                {/* Brain Logo in top left */}
+                <div className="absolute top-6 left-6 z-10">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
+                    <Brain className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+
+                {/* Main Content */}
+                <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
+                  {/* Central Brain Icon */}
+                  <div className="relative mb-6">
+                    <div className="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 shadow-2xl">
+                      <Brain className="w-12 h-12 text-white" />
+                    </div>
+                    {/* Floating dots around brain */}
+                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-white/60 rounded-full animate-pulse"></div>
+                    <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-white/40 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                    <div className="absolute top-1/2 -right-6 w-2 h-2 bg-white/50 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                    <div className="absolute top-1/4 -left-4 w-3 h-3 bg-white/30 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-bold text-white mb-2 text-glow">Neural Intelligence</h3>
+                  <p className="text-white/80 text-sm mb-6 max-w-xs">Advanced AI-powered personality mapping</p>
+
+                  {/* Floating elements/bubbles */}
+                  <div className="absolute top-1/4 right-1/4 floating-element">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"></div>
+                  </div>
+                  <div className="absolute bottom-1/3 left-1/4 floating-element">
+                    <div className="w-12 h-12 bg-white/15 backdrop-blur-sm rounded-full border border-white/25"></div>
+                  </div>
+                  <div className="absolute top-1/2 right-1/6 floating-element">
+                    <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full border border-white/30"></div>
+                  </div>
+                  <div className="absolute bottom-1/4 right-1/3 floating-element">
+                    <div className="w-6 h-6 bg-white/25 backdrop-blur-sm rounded-full border border-white/35"></div>
+                  </div>
+
+                  {/* Status indicator */}
+                  <div className="absolute bottom-6 left-6 flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span className="text-white/70 text-xs">Advanced Psychology Engine Active</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
