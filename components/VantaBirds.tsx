@@ -59,7 +59,40 @@ const VantaBirds = () => {
         left: 0,
         zIndex: 0, // Places it behind content but in front of the page background
       }}
-    />
+    >
+      {/* Gradient overlay to match the assessment page style */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%)',
+          opacity: 0.8,
+          pointerEvents: 'none',
+          zIndex: 1,
+        }}
+      />
+      {/* Additional radial gradients for depth */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: `
+            radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)
+          `,
+          opacity: 0.6,
+          pointerEvents: 'none',
+          zIndex: 2,
+        }}
+      />
+    </div>
   );
 };
 
