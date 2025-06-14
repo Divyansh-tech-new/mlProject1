@@ -254,17 +254,8 @@ export default function AssessmentPage() {
 
   return (
     <div className="page-container">
-      {/* Enhanced Dark Theme Bubble Background */}
-      <div className="bubble-background">
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-        <div className="bubble interactive-bubble"></div>
-      </div>
+      {/* Birds Background - Same as main page */}
+      <VantaBirds />
 
       {/* Enhanced Header with Bigger Brain Logo */}
       <div className="absolute top-8 left-8 z-20 fade-in">
