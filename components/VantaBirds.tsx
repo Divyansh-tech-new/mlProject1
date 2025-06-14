@@ -30,11 +30,12 @@ const VantaBirds = () => {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            backgroundAlpha: 0.00,
+            backgroundAlpha: 1.00,
+            backgroundColor: 0x0f0f23,
             color1: 0xc084fc,
             color2: 0xfbcfe8,
-            quantity: 3.00,
-            birdSize: 1.20,
+            quantity: 4.00,
+            birdSize: 1.50,
             vertexColors: false,
           });
           setVantaEffect(effect);
