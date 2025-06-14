@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Brain, Loader2, Users, Clock, Mic, Coffee, Zap, Mountain, Trees, Waves, ChevronLeft, ChevronRight, Eye } from "lucide-react"
 import { z } from "zod"
+import VantaBirds from "@/components/VantaBirds"
 
 // --- CORRECTED: The validation schema now matches your actual data ranges ---
 const PersonalitySchema = z.object({
